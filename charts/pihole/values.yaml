@@ -375,7 +375,9 @@ adlists:
 whitelist: 
    - sdk.split.io  # Village Pizza 
    - p.typekit.net # Village Pizza
-   - os.ss2.us
+   - os.ss2.us     # Village Pizza
+   - insideruser.microsoft.com # Microsoft insiders programme
+   
   # If you want to provide whitelisted domains, add them here.
   # - clients4.google.com
 
