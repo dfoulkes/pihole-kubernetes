@@ -318,6 +318,7 @@ dnsmasq:
     - address=/grafana.foulkes.cloud/192.168.50.24
     - address=/squid.foulkes.cloud/192.168.50.26
     - address=/torrent.foulkes.cloud/192.168.50.139
+    - address=/jelly.foulkes.cloud/192.168.50.100
   # - address=/bar.foo/192.168.178.11
 
   # -- Dnsmasq reads the /etc/hosts file to resolve ips. You can add additional entries if you like
