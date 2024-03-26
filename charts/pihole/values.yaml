@@ -313,7 +313,7 @@ dnsmasq:
   # -- Add custom dns entries to override the dns resolution. All lines will be added to the pihole dnsmasq configuration.
   customDnsEntries:
     - address=/proxmox.foulkes.cloud/192.168.50.100
-    - address=/nas.foulkes.cloud/192.168.50.3
+    - address=/nas.foulkes.cloud/192.168.50.53
     - address=/work.foulkes.cloud/192.168.50.35
     - address=/grafana.foulkes.cloud/192.168.50.24
     - address=/squid.foulkes.cloud/192.168.50.26
