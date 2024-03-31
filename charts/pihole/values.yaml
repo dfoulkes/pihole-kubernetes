@@ -316,7 +316,7 @@ dnsmasq:
     - address=/nas.foulkes.cloud/192.168.50.53
     - address=/work.foulkes.cloud/192.168.50.35
     - address=/grafana.foulkes.cloud/192.168.50.24
-    - address=/squid.foulkes.cloud/192.168.50.26
+    - address=/squid.foulkes.cloud/192.168.50.23
     - address=/torrent.foulkes.cloud/192.168.50.142
     - address=/jelly.foulkes.cloud/192.168.50.52
   # - address=/bar.foo/192.168.178.11
