@@ -321,6 +321,7 @@ dnsmasq:
     - address=/torrent.foulkes.cloud/192.168.50.52
     - address=/search.foulkes.cloud/192.168.50.52
     - address=/jelly.foulkes.cloud/192.168.50.52
+    - address=/vpn.foulkes.cloud/192.168.50.242
   # - address=/bar.foo/192.168.178.11
 
   # -- Dnsmasq reads the /etc/hosts file to resolve ips. You can add additional entries if you like
