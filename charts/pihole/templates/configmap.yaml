@@ -9,6 +9,7 @@ metadata:
     heritage: {{ .Release.Service }}
 data:
   02-custom.conf: |
+    local-ttl=3600
     addn-hosts=/etc/addn-hosts
   {{- range .Values.dnsmasq.upstreamServers }}
     {{ . }}
