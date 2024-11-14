@@ -51,7 +51,7 @@ serviceDns:
   externalTrafficPolicy: Local
 
   # -- A fixed `spec.loadBalancerIP` for the DNS Service
-  loadBalancerIP: "192.168.50.24"
+  loadBalancerIP: "192.168.55.31"
   # -- A fixed `spec.loadBalancerIP` for the IPv6 DNS Service
   loadBalancerIPv6: ""
 
@@ -80,7 +80,7 @@ serviceDhcp:
   externalTrafficPolicy: Local
 
   # -- A fixed `spec.loadBalancerIP` for the DHCP Service
-  loadBalancerIP: "192.168.50.26"
+  loadBalancerIP: "192.168.55.32"
   # -- A fixed `spec.loadBalancerIP` for the IPv6 DHCP Service
   loadBalancerIPv6: ""
 
@@ -122,7 +122,7 @@ serviceWeb:
   externalTrafficPolicy: Local
 
   # -- A fixed `spec.loadBalancerIP` for the web interface Service
-  loadBalancerIP: "192.168.50.23"
+  loadBalancerIP: "192.168.55.30"
   # -- A fixed `spec.loadBalancerIP` for the IPv6 web interface Service
   loadBalancerIPv6: ""
 
@@ -150,7 +150,7 @@ ingress:
   path: /
   hosts:
     # virtualHost (default value is pi.hole) will be appended to the hosts
-    - pihole.192.168.50.21.nip.io
+    - pihole.192.168.55.30.nip.io
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:
@@ -248,8 +248,8 @@ admin:
 extraEnvVars: 
     REV_SERVER: "true"
     REV_SERVER_DOMAIN: "local"
-    REV_SERVER_CIDR: "192.168.50.0/23"
-    REV_SERVER_TARGET: "192.168.50.1"
+    REV_SERVER_CIDR: "192.168.55.0/23"
+    REV_SERVER_TARGET: "192.168.55.1"
   # TZ: UTC
 
 # -- extraEnvVarsSecret is a list of secrets to load in as environment variables.
@@ -312,17 +312,17 @@ dnsmasq:
 
   # -- Add custom dns entries to override the dns resolution. All lines will be added to the pihole dnsmasq configuration.
   customDnsEntries:
-    - address=/proxmox.foulkes.cloud/192.168.50.100
-    - address=/nas.foulkes.cloud/192.168.50.63
-    - address=/work.foulkes.cloud/192.168.50.35
-    - address=/grafana.foulkes.cloud/192.168.50.208
-    - address=/squid.foulkes.cloud/192.168.50.23
+    - address=/proxmox.foulkes.cloud/192.168.55.101
+    - address=/nas.foulkes.cloud/192.168.55.105
+    - address=/work.foulkes.cloud/192.168.55.230
+    - address=/grafana.foulkes.cloud/192.168.55.200
+    - address=/squid.foulkes.cloud/192.168.55.200
     #- address=/torrent.foulkes.cloud/192.168.50.84
-    - address=/torrent.foulkes.cloud/192.168.50.52
-    - address=/search.foulkes.cloud/192.168.50.52
-    - address=/jelly.foulkes.cloud/192.168.50.52
+    - address=/torrent.foulkes.cloud/192.168.55.105
+    - address=/search.foulkes.cloud/192.168.55.105
+    - address=/jelly.foulkes.cloud/192.168.55.105
     #- address=/vpn.foulkes.cloud/192.168.50.242
-    - address=/home.foulkes.local/192.168.50.52
+    - address=/home.foulkes.local/192.168.55.105
   # - address=/bar.foo/192.168.178.11
 
   # -- Dnsmasq reads the /etc/hosts file to resolve ips. You can add additional entries if you like
